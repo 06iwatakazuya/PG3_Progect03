@@ -18,11 +18,15 @@ int main() {
 
 	printf("0:“G‚ªÁ‚¦‚é 1:‚»‚Ì‚Ü‚Ü ==>");
 	scanf_s("%d", &input);
-	if (input == 0)delete enemy1;
+	if (input == 0)enemy1->isAllDead = false;
 
 	cout << Enemy::isAllDead << endl;
 	cout << Enemy::isAllDead << endl;
 	cout << Enemy::isAllDead << endl;
+
+	delete enemy1;
+	delete enemy2;
+	delete enemy3;
 
 	return 0;
 }
